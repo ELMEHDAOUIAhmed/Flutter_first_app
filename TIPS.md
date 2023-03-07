@@ -29,3 +29,11 @@ publoc class in dart :
 class _MyClass
 
 
+in general if you want private you add '_' before it
+note : you need to put '_' everywhere
+
+example :
+var _count = 0;
+
+_count = _count + 1;
+

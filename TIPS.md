@@ -20,3 +20,12 @@ you cant call it from any where else because it deosnt have a name
 it reexecutes each time flutter want to rebuild a screen
 so you ATTENTION dont define dynamique variables there it will cause issues 
 it will be redefined each time it gets rebuild
+
+
+private class in dart :
+class _MyClass
+
+publoc class in dart :
+class _MyClass
+
+

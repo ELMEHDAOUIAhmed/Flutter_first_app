@@ -6,12 +6,26 @@ void main() {
 
 //void main => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
-
-void answerQuestion()
-{
-  print('Answer 1! chosen');
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return MyAppState();
+  }
 }
+
+class MyAppState extends State<MyApp> {
+  var questionIndex = 0;
+
+  void answerQuestion() {
+    setState(() {
+      if (questionIndex<1){
+      questionIndex = questionIndex + 1;
+      }
+    });
+
+    print('Answer 1! chosen');
+  }
 
   Widget build(BuildContext context) {
     var qst = [
@@ -25,17 +39,19 @@ void answerQuestion()
         ),
         body: Column(
           children: [
-            Text(qst[1]) ,
+            Text(qst[questionIndex]),
             ElevatedButton(
               onPressed: answerQuestion,
               child: Text('Answer 1'),
             ),
             ElevatedButton(
-              onPressed: ()=> print('Answer 2! chosen'),
+              onPressed: () => print('Answer 2! chosen'),
               child: Text('Answer 2'),
             ),
             ElevatedButton(
-              onPressed: (){ print('Answer 3! chosen');},
+              onPressed: () {
+                print('Answer 3! chosen');
+              },
               child: Text('Answer 3'),
             ),
           ],

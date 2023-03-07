@@ -19,8 +19,8 @@ class MyAppState extends State<MyApp> {
 
   void answerQuestion() {
     setState(() {
-      if (questionIndex<1){
-      questionIndex = questionIndex + 1;
+      if (questionIndex < 1) {
+        questionIndex = questionIndex + 1;
       }
     });
 
@@ -60,3 +60,5 @@ class MyAppState extends State<MyApp> {
     );
   }
 }
+
+ 

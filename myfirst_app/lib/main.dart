@@ -42,6 +42,8 @@ class MyAppState extends State<MyApp> {
           children: [
             Question(qst[questionIndex]),
             ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor: MaterialStatePropertyAll(Colors.blueGrey)),
               onPressed: answerQuestion,
               child: Text('Answer 1'),
             ),
@@ -61,5 +63,3 @@ class MyAppState extends State<MyApp> {
     );
   }
 }
-
- 

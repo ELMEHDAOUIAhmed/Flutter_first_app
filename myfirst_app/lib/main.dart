@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './question.dart';
+import './answer.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,30 +37,18 @@ class MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('hi'),
+          title: Text('QUIZZ APP'),
         ),
         body: Column(
           children: [
             Question(qst[questionIndex]),
-            ElevatedButton(
-              style: ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.blueGrey)),
-              onPressed: answerQuestion,
-              child: Text('Answer 1'),
-            ),
-            ElevatedButton(
-              onPressed: () => print('Answer 2! chosen'),
-              child: Text('Answer 2'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                print('Answer 3! chosen');
-              },
-              child: Text('Answer 3'),
-            ),
+          Answer(),
+          Answer(),
+          Answer(),
           ],
         ),
       ),
     );
   }
+  
 }

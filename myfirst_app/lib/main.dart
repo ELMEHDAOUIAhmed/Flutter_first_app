@@ -17,12 +17,12 @@ class MyApp extends StatefulWidget {
 }
 
 class MyAppState extends State<MyApp> {
-  var questionIndex = 0;
+  var _questionIndex = 0;
 
-  void answerQuestion() {
+  void _answerQuestion() {
     setState(() {
-      if (questionIndex < 1) {
-        questionIndex = questionIndex + 1;
+      if (_questionIndex < 1) {
+        _questionIndex = _questionIndex + 1;
       }
     });
 
@@ -42,9 +42,9 @@ class MyAppState extends State<MyApp> {
         body: Column(
           children: [
             Question(qst[questionIndex]),
-          Answer(),
-          Answer(),
-          Answer(),
+          Answer(_answerQuestion),
+          Answer(_answerQuestion),
+          Answer(_answerQuestion),
           ],
         ),
       ),

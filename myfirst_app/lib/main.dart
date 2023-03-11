@@ -41,7 +41,7 @@ class MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Question(qst[questionIndex]),
+            Question(qst[_questionIndex]),
           Answer(_answerQuestion),
           Answer(_answerQuestion),
           Answer(_answerQuestion),

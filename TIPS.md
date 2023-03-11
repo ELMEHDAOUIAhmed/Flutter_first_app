@@ -44,3 +44,10 @@ _count = _count + 1;
 # empty dart file 
 
 type st it will help you write code fast
+
+
+  // " Function "
+  //this att holds (store in future )a function or a pointer to a function
+  // "VoidCallback"
+  //tells flutter to get a  void function and that deos not return anything 
+  // is used if you get an error with Function

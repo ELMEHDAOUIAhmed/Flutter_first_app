@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> {
           title: Text('My First App'),
         ),
         body: _questionIndex < _questions.length
-            ? Quiz(_answerQuestion,_questions)
+            ? Quiz()
             : Center(
                 child: Text('QUIZ IS FINISHED!'),
               ),

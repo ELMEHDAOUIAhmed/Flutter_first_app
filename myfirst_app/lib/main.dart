@@ -32,6 +32,8 @@ class MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     //list var idf = []
     // inside that list add what you want map , another list, ect..
+    // index 0 of qst Map yealds the first questionText ect..
+
     var qst = [
       {
         'questionText': 'whats \'s your favorite color ?',

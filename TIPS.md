@@ -115,3 +115,18 @@ String? idf = 'test';
 
 
 
+if else in Widgets
+
+ body : bool ? Column(...)
+ :
+
+if true we execute Column
+ : means else
+ 
+ be aware after ? u can only put on thing , here we have Column 
+ Column can contain alot of stuff no worries but 
+ you need to respect the syntax after ? only one thing
+
+
+
+

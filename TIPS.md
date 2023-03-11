@@ -78,3 +78,6 @@ spread operator
   // is used if you get an error with Function
   final String answerText;
 
+# const vs final
+final runtime const
+const compile time const

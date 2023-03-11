@@ -59,11 +59,10 @@ type st it will help you write code fast
 syntax :
 var = {'key':'value','key','value', //add how many you like };
 
+
     //list var idf = []
     // inside that list add what you want map , another list, ect..
     // index 0 of qst Map yealds the first questionText ect..
-
-
 
 
 ...
@@ -78,3 +77,4 @@ spread operator
   //tells flutter to get a  void function and that deos not return anything 
   // is used if you get an error with Function
   final String answerText;
+

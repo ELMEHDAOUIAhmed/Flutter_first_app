@@ -1,11 +1,11 @@
-#very widget in flutter needs to extend "Stateless widget or stateful widget"
+# very widget in flutter needs to extend "Stateless widget or stateful widget"
 
-#force you to add build method to draw pixels into the screen  
+# force you to add build method to draw pixels into the screen  
 
-#@override 
+# @override 
 " decorative "
 
-#anonymous function :
+# anonymous function :
 onPressed: ()=> print('Answer 2! chosen'),
 
 or
@@ -16,7 +16,7 @@ you cant call it from any where else because it deosnt have a name
 
 
 
-#imagine Widget build as Loop() in arduino
+# imagine Widget build as Loop() in arduino
 it reexecutes each time flutter want to rebuild a screen
 so you ATTENTION dont define dynamique variables there it will cause issues 
 it will be redefined each time it gets rebuild
@@ -60,8 +60,10 @@ syntax :
 var = {'key':'value','key','value', //add how many you like };
 
 
+    //list var idf = []
+    // inside that list add what you want map , another list, ect..
+    // index 0 of qst Map yealds the first questionText ect..
 
-// stopped video 31
 
 ...
 spread operator 
@@ -75,6 +77,4 @@ spread operator
   //tells flutter to get a  void function and that deos not return anything 
   // is used if you get an error with Function
   final String answerText;
-
-
 

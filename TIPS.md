@@ -79,5 +79,39 @@ spread operator
   final String answerText;
 
 # const vs final
-final runtime const
-const compile time const
+final :runtime const
+const :compile time const
+
+# Dart specific
+syntax
+
+const idf = // cannot be redefined(cannot be overwritten)
+idk = xxx wrong
+or
+var idf = const // this allows you to redefine(overwrite) that idf
+syntax
+
+idf =
+
+# Dart new concept ( null safety)
+
+pubspec.yaml
+
+environment:
+  sdk:">2.12.0 <3.0.0"
+
+2.12.0 has null safety on ( meaning it will generate and error
+in your code incase there are potential null values(extra checks))
+
+2.11.0  has null safety OFF
+
+
+# as 'type' 
+as String , used to specify the type of variable
+
+
+String? idf = 'test';
+? means that can hold null
+
+
+

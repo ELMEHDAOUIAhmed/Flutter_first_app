@@ -5,9 +5,14 @@ import 'package:flutter/material.dart';
 class Answer extends StatelessWidget {
 
   final Function selectHandler;
-  // this att holds a function o a pointer to a function
+  // " Function "
+  //this att holds (store in future )a function or a pointer to a function
+  // "VoidCallback"
+  //tells flutter to get a  void function and that deos not return anything 
+  // is used if you get an error with Function
 
-  Answer();
+
+  Answer(this.selectHandler);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +21,7 @@ class Answer extends StatelessWidget {
       child:  ElevatedButton(
               style: ButtonStyle(
               backgroundColor: MaterialStatePropertyAll(Colors.orange)),
-              onPressed: null,
+              onPressed: selectHandler,
               child: Text('Answer 1'),
             ),
     );

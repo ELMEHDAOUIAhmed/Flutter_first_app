@@ -30,9 +30,21 @@ class MyAppState extends State<MyApp> {
   }
 
   Widget build(BuildContext context) {
+    //list var idf = []
+    // inside that list add what you want map , another list, ect..
     var qst = [
-      'whats \'s your favorite color ? :',
-      'Whats \'s your favorite animal ? ',
+      {
+        'questionText': 'whats \'s your favorite color ?',
+        'answers': ['Black', 'Red', 'Green', 'White'],
+      },
+      {
+        'questionText': 'whats \'s your favorite animal ?',
+        'answers': ['Giraffe', 'Lion', 'Bird', 'snake'],
+      },
+      {
+        'questionText': 'Who \'s your favorite instructor ?',
+        'answers': ['Hmida', 'Max', 'Lobna', 'Mourad '],
+      },
     ];
     return MaterialApp(
       home: Scaffold(
@@ -41,14 +53,13 @@ class MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Question(qst[_questionIndex]),
-          Answer(_answerQuestion),
-          Answer(_answerQuestion),
-          Answer(_answerQuestion),
+            Question(qst[_questionIndex]['questionIndex']),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
           ],
         ),
       ),
     );
   }
-  
 }

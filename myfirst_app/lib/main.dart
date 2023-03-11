@@ -1,64 +1,62 @@
 import 'package:flutter/material.dart';
+
 import './question.dart';
 import './answer.dart';
 
-void main() {
-  runApp(MyApp());
-}
+// void main() {
+//   runApp(MyApp());
+// }
 
-//void main => runApp(MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return MyAppState();
+    return _MyAppState();
   }
 }
 
-class MyAppState extends State<MyApp> {
+class _MyAppState extends State<MyApp> {
   var _questionIndex = 0;
 
   void _answerQuestion() {
     setState(() {
-      if (_questionIndex < 1) {
-        _questionIndex = _questionIndex + 1;
-      }
+      _questionIndex = _questionIndex + 1;
     });
-
-    print('Answer 1! chosen');
+    print(_questionIndex);
   }
 
+  @override
   Widget build(BuildContext context) {
-    //list var idf = []
-    // inside that list add what you want map , another list, ect..
-    // index 0 of qst Map yealds the first questionText ect..
-
-    var qst = [
+    var questions = [
       {
-        'questionText': 'whats \'s your favorite color ?',
+        'questionText': 'What\'s your favorite color?',
         'answers': ['Black', 'Red', 'Green', 'White'],
       },
       {
-        'questionText': 'whats \'s your favorite animal ?',
-        'answers': ['Giraffe', 'Lion', 'Bird', 'snake'],
+        'questionText': 'What\'s your favorite animal?',
+        'answers': ['Rabbit', 'Snake', 'Elephant', 'Lion'],
       },
       {
-        'questionText': 'Who \'s your favorite instructor ?',
-        'answers': ['Hmida', 'Max', 'Lobna', 'Mourad '],
+        'questionText': 'Who\'s your favorite instructor?',
+        'answers': ['Max', 'Max', 'Max', 'Max'],
       },
     ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('QUIZZ APP'),
+          title: Text('My First App'),
         ),
         body: Column(
           children: [
-            Question(qst[_questionIndex]['questionIndex']),
-            Answer(_answerQuestion),
-            Answer(_answerQuestion),
-            Answer(_answerQuestion),
+            Question(
+              questions[_questionIndex]['questionText'],
+            ),
+            ...(questions[_questionIndex]['answers'] as List<String>)
+                .map((answer) {
+              return Answer(_answerQuestion, answer);
+            }).toList()
           ],
         ),
       ),

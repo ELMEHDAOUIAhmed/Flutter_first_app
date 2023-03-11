@@ -59,6 +59,22 @@ type st it will help you write code fast
 syntax :
 var = {'key':'value','key','value', //add how many you like };
 
+    //list var idf = []
+    // inside that list add what you want map , another list, ect..
+    // index 0 of qst Map yealds the first questionText ect..
 
 
-// stopped video 31
+
+
+...
+spread operator 
+ what these three dots do here is they take a list which is exactly what we have here "var qst" and they pull all the values in the list out of it and add them to the surrounding list as individual values,
+ so that we dont add a list to list , but the values of a list to a list having ,o nly one list without a nested list.
+
+
+   // " Function "
+  //this att holds (store in future )a function or a pointer to a function
+  // "VoidCallback"
+  //tells flutter to get a  void function and that deos not return anything 
+  // is used if you get an error with Function
+  final String answerText;

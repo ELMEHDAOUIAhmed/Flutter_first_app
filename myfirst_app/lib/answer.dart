@@ -10,9 +10,9 @@ class Answer extends StatelessWidget {
   // "VoidCallback"
   //tells flutter to get a  void function and that deos not return anything 
   // is used if you get an error with Function
+  final String answerText;
 
-
-  Answer(this.selectHandler);
+  Answer(this.selectHandler,this.answerText);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class Answer extends StatelessWidget {
               ),
               onPressed: selectHandler,
               
-              child: Text('Answer 1'),
+              child: Text(answerText),
             ),
     );
   }

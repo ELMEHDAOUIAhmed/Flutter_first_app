@@ -51,3 +51,13 @@ type st it will help you write code fast
   // "VoidCallback"
   //tells flutter to get a  void function and that deos not return anything 
   // is used if you get an error with Function
+
+# data strucutre built into DART
+
+# MAP
+
+syntax :
+var = {'key':'value','key','value', //add how many you like };
+
+
+

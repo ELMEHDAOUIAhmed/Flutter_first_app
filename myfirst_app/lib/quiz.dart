@@ -28,6 +28,6 @@ Quiz({@required this.questions,
                     return Answer(answerQuestion, answer);
                   }).toList()
                 ],
-              )
+              );
   }
 }

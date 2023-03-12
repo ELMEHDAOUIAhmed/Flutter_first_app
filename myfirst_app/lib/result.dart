@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 class Result extends StatelessWidget {
 
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+                child: Text('QUIZ IS FINISHED!'),
+              );
   }
 }
